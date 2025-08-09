@@ -8,8 +8,6 @@ describe('Página de cadastro', () => {
         it('Clica no link "Cadastra-se" e redireciona para a página de cadastro da clínica', () => {
             cy.get('[href="/cadastro"]').click();
             cy.location('pathname').should('equal', '/cadastro')
-
-
         })
     })
 
